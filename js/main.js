@@ -27,7 +27,8 @@ function myFunction() {
         } catch(e) {
           term.error(new String(e));
         }
-      }
+      } else
+       term.echo('');
       if (command == 'resume') {
         try {
           window.location.href = "https://illustrisimo.dev/pages/resume.html";
@@ -36,7 +37,8 @@ function myFunction() {
         } catch(e) {
           term.error(new String(e));
         }
-      }
+      } else
+      term.echo('');
       if (command == 'projects') {
         try {
           window.location.href = "https://illustrisimo.dev/pages/projects.html";
@@ -45,7 +47,8 @@ function myFunction() {
         } catch(e) {
           term.error(new String(e));
         }
-      }
+      } else
+      term.echo('');
       if (command == 'cd about') {
         try {
           window.location.href = "https://illustrisimo.dev/pages/about.html";
@@ -54,7 +57,8 @@ function myFunction() {
         } catch(e) {
           term.error(new String(e));
         }
-      }
+      } else
+      term.echo('');
       if (command == 'cd resume') {
         try {
           window.location.href = "https://illustrisimo.dev/pages/resume.html";
@@ -63,7 +67,8 @@ function myFunction() {
         } catch(e) {
           term.error(new String(e));
         }
-      }
+      } else
+      term.echo('');
       if (command == 'cd projects') {
         try {
           window.location.href = "https://illustrisimo.dev/pages/projects.html";
@@ -72,7 +77,8 @@ function myFunction() {
         } catch(e) {
           term.error(new String(e));
         }
-      }       
+      } else
+      term.echo('');      
     },
     {
       greetings: '', 
