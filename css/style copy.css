@@ -164,23 +164,20 @@ nav ul li {
 }
 
 .topnav a {
+  float: left;
   color: white;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  display: block;
 }
 
 .topnav a.icon {
   float: right;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 
 .topnav a:hover {
-  color:rgb(169, 169, 179);
+  background-color: #ddd;
+  color: black;
 }
 
 .active {
