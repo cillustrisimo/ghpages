@@ -24,7 +24,7 @@ article {
   display: block;
 }
 hr{
-  width: 700px;
+  width: auto;
   border-style: dashed;
 }
 h1 {
@@ -129,6 +129,61 @@ nav ul li {
 .cursor {
   font-weight: 700;
   animation: 1s blink step-end infinite;
+}
+/*  */
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.icon {
+  float: right;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  color: white;
+}
+.menu {
+  display: none; /* Hide on Desktop */
+}
+
+@media (max-width: 600px) {
+   .menu {
+    display: block; /* Show on Mobile */
+  }
+}
+
+@media (max-width: 600px) {
+  .desktop-content{
+    display: none !important;
+  }
 }
 
 @keyframes blink {
