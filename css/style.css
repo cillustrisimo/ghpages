@@ -16,10 +16,11 @@ body {
   color: #ccc;
   font-size: 18px;
   line-height: 1.6;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
-div{
-  text-align: center;
-}
+
 article {
   display: block;
 }
@@ -84,7 +85,8 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  float: left;
+  margin-left: 22px;
 }
 
 nav ul li {
@@ -127,13 +129,12 @@ nav ul li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
-.wb-body {
+/* .wb-body {
   background: #111;
   padding: 20px;
-}
+} */
 
 .hidden {
   display: none;
@@ -190,10 +191,31 @@ nav ul li {
   display: none; /* Hide on Desktop */
 }
 
+/*  */
+.terminal, .cmd {
+    background: #282b30;
+    color: rgb(169, 169, 179)
+}
+.terminal {
+  --size: 3;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .terminal {
+    --size: 2.5;
+ }
 @media (max-width: 600px) {
    .menu {
     display: block; /* Show on Mobile */
   }
+}
+
+.cmd, .cmd div, .cmd span[data-text]:not(.cmd-inverted):not(.token):not(.emoji), 
+.terminal, .terminal-output>:not(.raw) a, .terminal-output>:not(.raw) div, 
+.terminal-output>:not(.raw) span[data-text]:not(.token):not(.inverted):not(.terminal-inverted):not(.cmd-inverted):not(.terminal-error):not(.emoji), 
+.terminal.external [data-text] {
+  color: rgb(169, 169, 179);
 }
 
 @media (max-width: 600px) {
