@@ -78,13 +78,43 @@ function myFunction() {
           term.error(new String(e));
         }
       } else
-      term.echo('');      
+      term.echo('');
+      if (command == '/about') {
+        try {
+          window.location.href = "https://illustrisimo.dev/pages/about.html";
+          if (result !== undefined)
+            term.echo(new String(result));
+        } catch(e) {
+          term.error(new String(e));
+        }
+      } else
+      term.echo('');
+      if (command == '/resume') {
+        try {
+          window.location.href = "https://illustrisimo.dev/pages/resume.html";
+          if (result !== undefined)
+            term.echo(new String(result));
+        } catch(e) {
+          term.error(new String(e));
+        }
+      } else
+      term.echo('');
+      if (command == '/projects') {
+        try {
+          window.location.href = "https://illustrisimo.dev/pages/projects.html";
+          if (result !== undefined)
+            term.echo(new String(result));
+        } catch(e) {
+          term.error(new String(e));
+        }
+      } else
+      term.echo('');        
     },
     {
       greetings: '', 
       name: 'Carl Terminal',
       height: 80,
-      width:700, // adjust width accordingly
+      width:700, 
       prompt: 'carl_illustrisimo:~$'
     });
 
