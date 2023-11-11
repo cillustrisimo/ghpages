@@ -9,6 +9,8 @@ function myFunction() {
 
   (function($){
     $('#terminal').terminal(function(command, term) {
+      command = command.replace(/\s+/g,'');
+      
       if (command == 'sudo') {
         try {
           window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
@@ -49,7 +51,7 @@ function myFunction() {
         }
       } else
       term.echo('');
-      if (command == 'cd about') {
+      if (command == 'cdabout') {
         try {
           window.location.href = "https://illustrisimo.dev/pages/about.html";
           if (result !== undefined)
@@ -59,7 +61,7 @@ function myFunction() {
         }
       } else
       term.echo('');
-      if (command == 'cd resume') {
+      if (command == 'cdresume') {
         try {
           window.location.href = "https://illustrisimo.dev/pages/resume.html";
           if (result !== undefined)
@@ -69,7 +71,7 @@ function myFunction() {
         }
       } else
       term.echo('');
-      if (command == 'cd projects') {
+      if (command == 'cdprojects') {
         try {
           window.location.href = "https://illustrisimo.dev/pages/projects.html";
           if (result !== undefined)
